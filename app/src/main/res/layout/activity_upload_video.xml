@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadVideo">
+    <Button
+        android:onClick="videofromGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/openvideoBT"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/open_gallery"
+        android:textAllCaps="false"
+        android:layout_marginTop="5dp"
+        />
+    <VideoView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/openvideoBT"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/Videoview"
+        />
+
+    <Button
+        android:onClick="upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadvideoBT"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/upload_video"
+        android:textAllCaps="false"
+        android:layout_below="@id/Videoview"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
